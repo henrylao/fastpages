@@ -451,51 +451,13 @@ $$<blockquote><p>"...error rate by the square root of MSE. RMSE is the most easi
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-$$\begin{align}
-\frac{dE}{dy_{hat}}=y_{hat}-y,  &amp;\text{ derivative of error wrt prediction}\\
-\frac{dy_{hat}}{dZ}=1, &amp;\text{ derivative of }y_{hat} \text{ wrt } Z\\
-\frac{dZ}{dw_1}=x_1, \frac{Z}{dw_{0}}=x_0=1,&amp;\text{ derivative of } Z \text{ wrt } w_0 \text{ and } w_1\\
-\frac{dE}{dw_1}=\frac{dE}{dy_{hat}}\times\frac{dy_{hat}}{dZ}\times\frac{dZ}{dw_1}, &amp;\text{ computing the gradient of the error function using Chain Rule}\\
-\frac{dE}{dw_1}=-(y-y_{hat})\times 1 \times x_1 = -(y-y_{hat})\times x_1\\
-\frac{dE}{dw_0}=-(y-y_{hat})\times 1 \times x_0 = -(y-y_{hat})
-\end{align}$$
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
+<p>
+$$\begin{align}\frac{dE}{dy_{hat}}=y_{hat}-y,  &amp;\text{ derivative of error wrt prediction}\\\frac{dy_{hat}}{dZ}=1, &amp;\text{ derivative of }y_{hat} \text{ wrt } Z\\\frac{dZ}{dw_1}=x_1, \frac{Z}{dw_{0}}=x_0=1,&amp;\text{ derivative of } Z \text{ wrt } w_0 \text{ and } w_1\\\frac{dE}{dw_1}=\frac{dE}{dy_{hat}}\times\frac{dy_{hat}}{dZ}\times\frac{dZ}{dw_1}, &amp;\text{ computing the gradient of the error function using Chain Rule}\\\frac{dE}{dw_1}=-(y-y_{hat})\times 1 \times x_1 = -(y-y_{hat})\times x_1\\\frac{dE}{dw_0}=-(y-y_{hat})\times 1 \times x_0 = -(y-y_{hat})\end{align}$$
+</p>
 
 </div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
 </div>
 </div>
-
-</div>
-    
-
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Sum-of-Square-Error-Linear-Regression-System-Design">Sum of Square Error Linear Regression System Design<a class="anchor-link" href="#Sum-of-Square-Error-Linear-Regression-System-Design"> </a></h2>
